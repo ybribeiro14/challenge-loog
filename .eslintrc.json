@@ -5,7 +5,8 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "plugin:prettier/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -16,14 +17,12 @@
     },
     "plugins": [
         "react",
-        "prettier",
-        "plugin:prettier/recommended"
+        "prettier"
     ],
     "rules": {
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
       "prettier/prettier": "error",
       "no-unused-expressions": "off",
+      "react/react-in-jsx-scope": "off",
       "no-nested-ternary": "off",
       "react/jsx-filename-extension": [
         "warn",
